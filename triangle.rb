@@ -40,7 +40,7 @@ class TriangleTypes
       #Insert exception handler to ensure correct format for user input
       begin
         puts "Enter a Value for Side #{value}" #print to console
-        side = Float(gets.chomp) #assign user input and remove newline
+        side = Float(gets.chomp).abs #assign user input, returns absolute values and  remove newline
       rescue
         puts "Wrong Input. Please enter an integer or float" #Throw error if user input is invalid
         retry #repeat the current loop
@@ -60,7 +60,7 @@ class TriangleTypes
     sorted_array = @@triangle_array.sort
     unless sorted_array[0] + sorted_array[1] > sorted_array.last
       puts "Unfortunately, your inputed figures will not form a valid triangle as #{sorted_array[0]} plus #{sorted_array[1]} is less than  #{sorted_array.last}. You will have to try again"
-      prompt #reruns the method
+      prompts #reruns the method
       userinput # reruns the method
     end #end unless
 
