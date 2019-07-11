@@ -1,3 +1,8 @@
+
+#  * This program tells you the type of triangle given the 3 sides.
+#  * @author = Chidozie Nnachor
+ 
+
 class TriangleTypes
   
   puts "This program collects three inputs (representing 'sides') from the user and then determines the type of triangle, given those sides. Remember, for a triangle to be valid, the sum of any 2 sides will always be greater than the third side. Let's begin..."
@@ -42,7 +47,7 @@ class TriangleTypes
         puts "Enter a Value for Side #{value}" #print to console
         side = Float(gets.chomp).abs #assign user input, returns absolute values and  remove newline
       rescue
-        puts "Wrong Input. Please enter an integer or float" #Throw error if user input is invalid
+        puts "Wrong Input. Please ensure you enter number" #Throw error if user input is invalid
         retry #repeat the current loop
       end #end begin
 

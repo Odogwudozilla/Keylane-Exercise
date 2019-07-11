@@ -2,7 +2,7 @@ import java.util.*;
  
 /**
  * This program tells you the type of triangle given the 3 sides.
- * @author Chidozie Nnachor
+ * @author = Chidozie Nnachor
  */
 public class TriangleTypes {
 	
