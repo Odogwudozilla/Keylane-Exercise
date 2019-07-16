@@ -1,24 +1,23 @@
 import java.util.*;
- 
+
 /**
  * This program tells you the type of triangle given the 3 sides.
+ * 
  * @author = Chidozie Nnachor
  */
 public class TriangleTypes {
-	
-	 static Scanner userin = new Scanner(System.in); //define the method for getting user input
-	 
-	 
-	 //Define the error/exception method
-       static void tryError() {
-       	 while (!userin.hasNextFloat()) {
-             System.out.println("You have entered invalid data. Ensure entered data is a number");
-             userin.next();  
-            }
-       }
-      
-     
-    public static void main(String[] args) {
+
+    static Scanner userin = new Scanner(System.in); // define the method for getting user input
+
+    // Define the error/exception method
+    static void tryError() {
+        while (!userin.hasNextFloat()) {
+            System.out.println("You have entered invalid data. Ensure entered data is a number");
+            userin.next();
+        }
+    }
+
+    public static void main(String[] args) {run
     	
     	int getUserChoice = 1; //set loop to 1
     	while(getUserChoice != 0)
@@ -80,16 +79,15 @@ public class TriangleTypes {
         	   
            }
     }
-       
-    
+
     /**
-     * The private method below checks if the 3 sides can form a valid triangle
-     * The condition is that sum of any two sides must be greater than the third side
+     * The private method below checks if the 3 sides can form a valid triangle The
+     * condition is that sum of any two sides must be greater than the third side
      */
     private boolean isTriangleValid(double ab, double bc, double ca) {
-        if((ab+bc)>ca && (ab+ca)>bc && (bc+ca)>ab) {
+        if ((ab + bc) > ca && (ab + ca) > bc && (bc + ca) > ab) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
